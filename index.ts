@@ -57,7 +57,7 @@ const uniqueByKeys: UniqueByKeys<any> = (array, key1, key2, key3) => {
   return uniqueArray;
 };
 
-fs.createReadStream('321 Church Finder list of confirmed churches pre 26th September.csv')
+fs.createReadStream('input.csv')
   .pipe(csv())
   .on('data', (data: dataEntry) => results.push(data))
   .on('end', () => {

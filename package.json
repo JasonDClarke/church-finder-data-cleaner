@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --import tsx ./index.ts",
     "batch-geocode": "node --import tsx ./batch-geocode.ts",
-    "jsonToCsv": "node --import tsx ./jsonToCsv.ts"
+    "jsonToCsv": "node --import tsx ./jsonToCsv.ts",
+    "all": "npm start && npm run batch-geocode && npm run jsonToCsv"
   },
   "author": "",
   "license": "ISC",

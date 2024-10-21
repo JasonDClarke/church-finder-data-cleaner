@@ -4,7 +4,7 @@ apikey.ts
 
 
 # input/output files
-321 Church Finder list of confirmed churches pre 26th September.csv
+input.csv
 fullData.csv
 fullData.json
 fullDataMyMaps.csv
