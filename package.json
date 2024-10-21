@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "church-finder-data-cleaner",
+  "version": "1.0.0",
+  "description": "Some utilities to clean up the csv file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --import tsx ./index.ts",
+    "batch-geocode": "node --import tsx ./batch-geocode.ts",
+    "jsonToCsv": "node --import tsx ./jsonToCsv.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.7.5",
+    "csv-parser": "^3.0.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-fetch": "^2.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

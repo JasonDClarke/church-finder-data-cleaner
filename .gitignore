@@ -1,0 +1,14 @@
+node_modules
+
+apikey.ts
+
+
+# input/output files
+321 Church Finder list of confirmed churches pre 26th September.csv
+fullData.csv
+fullData.json
+fullDataMyMaps.csv
+locationOutput.json
+locationsAsCoordinates.json
+locationsDataPlusCoordinates.json
+output.json
