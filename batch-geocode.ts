@@ -169,3 +169,14 @@ writeJSONToFile(uniqueByKey(churchSuiteData.map((x, index) => ({
   lat: queryResult[index].lat, 
 })), 'key'),
 'fullData.json')
+
+// exclude PII (name of entry)
+writeJSONToFile(uniqueByKey(churchSuiteData.map((x, index) => {
+  return {
+  ...Object.fromEntries(Object.entries(x).filter(([x,y]) => x === 'First & Last Name')),
+  key: `${x['Church or Organisation']}, ${x['Church Postcode / ZIP Code']}, ${x['Church Country']}`,
+  lng: queryResult[index].lon,
+  lat: queryResult[index].lat, 
+  }
+}), 'key'),
+'fullDataMinusPII.json')
