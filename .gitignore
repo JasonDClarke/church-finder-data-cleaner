@@ -7,6 +7,7 @@ apikey.ts
 input.csv
 fullData.csv
 fullData.json
+fullDataMinusPII.json
 fullDataMyMaps.csv
 locationOutput.json
 locationsAsCoordinates.json
